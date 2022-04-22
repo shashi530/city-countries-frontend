@@ -39,15 +39,15 @@ export const Home = () => {
     <>
 
       <div className="buttons">
-        <Button onClick = {() => {dispatch(srtPopAsc())}} variant="contained" color="primary">
-          Sort By Population (ASC)
+        <Button onClick = {() => {dispatch(srtPopAsc())}} variant="contained" color="error">
+          Sort By Population (Asc)
         </Button>
-        <Button onClick = {() => {dispatch(srtPopDesc())}} variant="contained" color="success">
-        Sort By Population (DSC)
+        <Button onClick = {() => {dispatch(srtPopDesc())}} variant="contained" color="error">
+        Sort By Population (Dsc)
         </Button>
 
         <TextField onChange = {(e) => (setquery(e.target.value))} id="outlined-basic" label="Enter Country" variant="outlined" />
-        <Button onClick = {() => {handleFilter(query)}} variant="contained" color="secondary">
+        <Button onClick = {() => {handleFilter(query)}} variant="contained" color="error">
           Filter By Country
         </Button>
       </div>
